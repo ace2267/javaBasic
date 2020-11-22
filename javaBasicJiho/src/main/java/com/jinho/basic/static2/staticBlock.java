@@ -5,6 +5,10 @@ public class staticBlock {
 	public static void main(String[] args) {
 	    Student.name = "하하하";
 	    System.out.println(Student.name);
+	    
+	    new Student();
+	    System.out.println("---------------------------");
+	    new Student();
 	}
 	
 	  static class Student {
