@@ -29,11 +29,11 @@ public class staticBlock {
 		        // 인스턴스 블록은 인스턴스 주소를 보관한 this라는 변수가 내장되어 있다.
 		      
 		        System.out.println(age);
-		        System.out.println("{인스턴스 블록 실행...1}");
+		        System.out.println("{인스턴스 블록 실행...11}");
 		        this.age = 30;
 		      }
 		      {
-		        System.out.println("{인스턴스 블록 실행...2}");
+		        System.out.println("{인스턴스 블록 실행...22}");
 		      }
 	}
 
