@@ -1,11 +1,11 @@
 import java.lang.annotation.*;
 
 @Deprecated
-@SuppressWarnings("1111") // À¯È¿ÇÏÁö ¾ÊÀº ¾Ö³ÊÅ×ÀÌ¼ÇÀº ¹«½ÃµÈ´Ù.
+@SuppressWarnings("1111") // ï¿½ï¿½È¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ö³ï¿½ï¿½ï¿½ï¿½Ì¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ÃµÈ´ï¿½.
 @TestInfo(testedBy="aaa", testDate=@DateTime(yymmdd="160101", hhmmss="235959"))
 class AnnotationEx5 {
 	public static void main(String args[]) {
-		// AnnotaionEx5ÀÇ Class°´Ã¼¸¦ ¾ò´Â´Ù.
+		// AnnotaionEx5ï¿½ï¿½ Classï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½Â´ï¿½.
 		Class<AnnotationEx5> cls = AnnotationEx5.class;
 		
 		TestInfo anno = (TestInfo)cls.getAnnotation(TestInfo.class);
@@ -18,15 +18,15 @@ class AnnotationEx5 {
 
 		System.out.println();
 		
-		// AnnotationEx5¿¡ Àû¿ëµÈ ¸ðµç ¾Ö³ÊÅ×ÀÌ¼ÇÀ» °¡Á®¿Â´Ù.
+		// AnnotationEx5ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ö³ï¿½ï¿½ï¿½ï¿½Ì¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Â´ï¿½.
 		Annotation[] annoArr = cls.getAnnotations();
 
 		for(Annotation a : annoArr)
 			System.out.println(a);
-	} // mainÀÇ ³¡
+	} // mainï¿½ï¿½ ï¿½ï¿½
 }
 
-@Retention(RetentionPolicy.RUNTIME)  // ½ÇÇà ½Ã¿¡ »ç¿ë°¡´ÉÇÏµµ·Ï ÁöÁ¤ 
+@Retention(RetentionPolicy.RUNTIME)  // ï¿½ï¿½ï¿½ï¿½ ï¿½Ã¿ï¿½ ï¿½ï¿½ë°¡ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
 @interface TestInfo {
 	int       count()	    default 1;
 	String    testedBy();
@@ -35,10 +35,10 @@ class AnnotationEx5 {
 	DateTime  testDate();
 }
 
-@Retention(RetentionPolicy.RUNTIME)  // ½ÇÇà ½Ã¿¡ »ç¿ë°¡´ÉÇÏµµ·Ï ÁöÁ¤
+@Retention(RetentionPolicy.RUNTIME)  // ï¿½ï¿½ï¿½ï¿½ ï¿½Ã¿ï¿½ ï¿½ï¿½ë°¡ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 @interface DateTime {
 	String yymmdd();
 	String hhmmss();
 }
 
-enum TestType { FIRST, FINAL }
+enum TestType { FIRST, FINAL } 
